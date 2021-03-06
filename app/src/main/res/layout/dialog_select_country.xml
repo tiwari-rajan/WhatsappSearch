@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bottom_dialog"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:padding="0dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="1dp"
+            app:contentPadding="0dp">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search Here"
+                app:showDividers="none" />
+
+        </android.support.v7.widget.CardView>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:listSelector="@color/transparent"
+            android:scrollbarSize="2dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+</FrameLayout>
